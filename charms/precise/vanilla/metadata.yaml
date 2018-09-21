@@ -1,0 +1,18 @@
+name: vanilla
+summary: Vanilla is an open-source, pluggable, multi-lingual forum.
+maintainer: joaoppc <cloud@maas>
+description: |
+  Vanilla is designed to deploy and grow small communities to scale.
+  This charm deploys Vanilla Forums as outlined by the Vanilla Forums
+  installation guide.
+tags:
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - social
+subordinate: false
+provides:
+    website:
+        interface: http
+    requires:
+        database:
+            interface: mysql
